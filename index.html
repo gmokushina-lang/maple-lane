@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maple Lane · A helping hand</title>
+<link rel="stylesheet" href="./maple-lane.css">
+<script src="./maple-lane.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a href="#scene">Go to the street</a><h1>Maple Lane</h1><button id="restart">Start over</button></header>
+<main>
+<aside id="mission" class="mission" aria-live="polite"></aside>
+<div class="play-layout">
+<div id="scene" class="scene" tabindex="0" aria-label="Maple Lane scene"></div>
+<section id="dialogue" class="chat" aria-label="Conversation" hidden>
+<header class="chat-header"><h2 id="speaker"></h2><button id="close-chat" type="button">Close chat</button></header>
+<div id="messages" class="messages" role="log" aria-label="Messages"></div>
+<div id="replies" class="choices" aria-label="Choose a reply"></div>
+</section>
+</div>
+<section id="satchel" class="satchel" aria-label="Resources collected"></section>
+</main>
+<dialog id="reset-dialog"><h2>Start over?</h2><p>This clears your Maple Lane adventure.</p><form method="dialog"><button value="cancel">Keep playing</button><button value="reset">Start over</button></form></dialog>
+</body></html>
+
